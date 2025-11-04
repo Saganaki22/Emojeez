@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Emoji Not Found | 😱 Emojeez Encyclopedia</title>
+    <meta name="description" content="Oops! This emoji has escaped the encyclopedia! Help us find the missing emoji and get back to discovering thousands of amazing emojis.">
+    <meta name="robots" content="noindex, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://drbaph.is-a.dev/Emojeez/404.html">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="404 - Emoji Not Found | 😱 Emojeez Encyclopedia">
+    <meta property="og:description" content="Oops! This emoji has escaped the encyclopedia! Help us find the missing emoji and get back to discovering thousands of amazing emojis.">
+    <meta property="og:image" content="https://i.ibb.co/HTWT6tpT/9-WDKMb-Djl-TPpl-wes97-R6-output.png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://drbaph.is-a.dev/Emojeez/404.html">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="404 - Emoji Not Found | 😱 Emojeez Encyclopedia">
+    <meta name="twitter:description" content="Oops! This emoji has escaped the encyclopedia! Help us find the missing emoji and get back to discovering thousands of amazing emojis.">
+    <meta name="twitter:image" content="https://i.ibb.co/HTWT6tpT/9-WDKMb-Djl-TPpl-wes97-R6-output.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            width: 100%;
+            overflow-x: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --glass-bg-strong: rgba(255, 255, 255, 0.15);
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.8);
+            --shadow-soft: 0 8px 32px rgba(31, 38, 135, 0.37);
+            --shadow-hover: 0 12px 40px rgba(31, 38, 135, 0.5);
+            --transition-smooth: 0.3s ease;
+            --transition-bounce: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        .error-container {
+            background: var(--glass-bg);
+            backdrop-filter: blur(25px);
+            border: 1px solid var(--glass-border);
+            border-radius: 2rem;
+            padding: 3rem 2rem;
+            box-shadow: var(--shadow-soft);
+            position: relative;
+            overflow: hidden;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            animation: glitch 2s ease-in-out infinite;
+        }
+
+        @keyframes glitch {
+            0%, 100% {
+                text-shadow: 2px 2px 0 #ff00ff, -2px -2px 0 #00ffff;
+                transform: translate(0);
+            }
+            20% {
+                text-shadow: 2px 2px 0 #ff00ff, -2px -2px 0 #00ffff;
+                transform: translate(-2px, 2px);
+            }
+            40% {
+                text-shadow: -2px -2px 0 #ff00ff, 2px 2px 0 #00ffff;
+                transform: translate(-2px, -2px);
+            }
+            60% {
+                text-shadow: 2px -2px 0 #ff00ff, -2px 2px 0 #00ffff;
+                transform: translate(2px, -2px);
+            }
+            80% {
+                text-shadow: -2px 2px 0 #ff00ff, 2px -2px 0 #00ffff;
+                transform: translate(2px, 2px);
+            }
+        }
+
+        .missing-emoji {
+            font-size: 4rem;
+            margin: 1rem 0;
+            animation: escape 3s ease-in-out infinite;
+            display: inline-block;
+        }
+
+        @keyframes escape {
+            0%, 100% {
+                transform: translate(0, 0) rotate(0deg);
+                opacity: 1;
+            }
+            25% {
+                transform: translate(30px, -30px) rotate(15deg);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translate(-20px, 20px) rotate(-10deg);
+                opacity: 0.6;
+            }
+            75% {
+                transform: translate(40px, 10px) rotate(5deg);
+                opacity: 0.9;
+            }
+        }
+
+        .error-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: rainbow 3s ease-in-out infinite;
+        }
+
+        @keyframes rainbow {
+            0%, 100% { filter: hue-rotate(0deg); }
+            50% { filter: hue-rotate(180deg); }
+        }
+
+        .error-description {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .emoji-suspects {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .suspect-emoji {
+            font-size: 2rem;
+            padding: 1rem;
+            background: var(--glass-bg-strong);
+            border-radius: 50%;
+            border: 2px solid var(--glass-border);
+            transition: all var(--transition-bounce);
+            cursor: pointer;
+            animation: suspect-wiggle 2s ease-in-out infinite;
+            animation-delay: calc(var(--delay) * 0.1s);
+        }
+
+        .suspect-emoji:hover {
+            transform: scale(1.2) rotate(15deg);
+            background: var(--accent-gradient);
+            border-color: transparent;
+        }
+
+        @keyframes suspect-wiggle {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-5deg); }
+            75% { transform: rotate(5deg); }
+        }
+
+        .search-party {
+            font-size: 1rem;
+            margin: 2rem 0;
+            opacity: 0.8;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--accent-gradient);
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all var(--transition-bounce);
+            box-shadow: var(--shadow-soft);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .back-button:active {
+            transform: translateY(-1px) scale(0.98);
+        }
+
+        .back-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .back-button:hover::before {
+            left: 100%;
+        }
+
+        .footer-text {
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            opacity: 0.7;
+            font-style: italic;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .error-container {
+                padding: 2rem 1.5rem;
+            }
+
+            .error-code {
+                font-size: 5rem;
+            }
+
+            .error-title {
+                font-size: 1.8rem;
+            }
+
+            .missing-emoji {
+                font-size: 3rem;
+            }
+
+            .error-description {
+                font-size: 1rem;
+            }
+
+            .emoji-suspects {
+                gap: 0.5rem;
+            }
+
+            .suspect-emoji {
+                font-size: 1.5rem;
+                padding: 0.7rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .error-code {
+                font-size: 4rem;
+            }
+
+            .error-title {
+                font-size: 1.5rem;
+            }
+
+            .missing-emoji {
+                font-size: 2.5rem;
+            }
+
+            .back-button {
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-container">
+            <div class="error-code">404</div>
+            <div class="missing-emoji">🏃‍♂️💨</div>
+            <h1 class="error-title">Emoji Escaped!</h1>
+
+            <p class="error-description">
+                Oh no! The emoji you're looking for has escaped the encyclopedia! 🚨
+                We've sent our best emoji detectives to find it, but it's proving to be quite sneaky.
+            </p>
+
+            <div class="search-party">
+                <p>🔍 Search party in progress... These emojis were seen near the crime scene:</p>
+            </div>
+
+            <div class="emoji-suspects">
+                <span class="suspect-emoji" style="--delay: 0">🕵️‍♂️</span>
+                <span class="suspect-emoji" style="--delay: 1">🔍</span>
+                <span class="suspect-emoji" style="--delay: 2">🚓</span>
+                <span class="suspect-emoji" style="--delay: 3">📢</span>
+                <span class="suspect-emoji" style="--delay: 4">🤔</span>
+                <span class="suspect-emoji" style="--delay: 5">🤷‍♂️</span>
+            </div>
+
+            <p class="error-description">
+                While our emoji search party looks for the missing character,<br>
+                why not head back to the main emoji collection?
+            </p>
+
+            <a href="https://drbaph.is-a.dev/Emojeez" class="back-button">
+                <span>←</span>
+                <span>Back to Emoji Safety</span>
+            </a>
+
+            <p class="footer-text">
+                Don't worry, even emojis need their freedom sometimes! 🦋✨
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Add some interactive fun
+        document.addEventListener('DOMContentLoaded', function() {
+            const suspects = document.querySelectorAll('.suspect-emoji');
+            const messages = [
+                "I saw nothing! 👀",
+                "It went that way! 👉",
+                "💨 Whoosh!",
+                "🤫 I'm sworn to secrecy!",
+                "It was disguised as 🎭",
+                "Ask the question mark emoji ?"
+            ];
+
+            suspects.forEach((suspect, index) => {
+                suspect.addEventListener('click', function() {
+                    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+
+                    // Create a temporary message bubble
+                    const bubble = document.createElement('div');
+                    bubble.textContent = randomMessage;
+                    bubble.style.cssText = `
+                        position: absolute;
+                        background: rgba(255, 255, 255, 0.95);
+                        color: #333;
+                        padding: 0.5rem 1rem;
+                        border-radius: 1rem;
+                        font-size: 0.9rem;
+                        font-weight: 600;
+                        z-index: 1000;
+                        animation: fadeInOut 2s ease;
+                        pointer-events: none;
+                        white-space: nowrap;
+                        top: -40px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    `;
+
+                    this.style.position = 'relative';
+                    this.appendChild(bubble);
+
+                    setTimeout(() => bubble.remove(), 2000);
+                });
+
+                // Add hover sound effect (visual feedback)
+                suspect.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.1) rotate(10deg)';
+                });
+
+                suspect.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1) rotate(0deg)';
+                });
+            });
+
+            // Add floating animation to the missing emoji
+            const missingEmoji = document.querySelector('.missing-emoji');
+            setInterval(() => {
+                const emojis = ['🏃‍♂️💨', '🏃‍♀️💨', '🐎💨', '🚗💨', '🚀💨', '🏃‍♂️➡️', '💨➡️', '👻➡️'];
+                const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+                missingEmoji.textContent = randomEmoji;
+            }, 3000);
+        });
+
+        // Add CSS animation for message bubbles
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeInOut {
+                0% { opacity: 0; transform: translateX(-50%) translateY(10px); }
+                20% { opacity: 1; transform: translateX(-50%) translateY(0); }
+                80% { opacity: 1; transform: translateX(-50%) translateY(0); }
+                100% { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

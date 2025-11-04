@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Emojeez Encyclopedia | Discover Every Emotion</title>
+    <meta name="description" content="The most beautiful and interactive emoji encyclopedia. Discover, search, and explore thousands of emojis with stunning animations.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Emojeez">
+    <meta name="keywords" content="emoji, emojis, emoji encyclopedia, emoji search, emoji dictionary, emoji meanings, emoji combinations, emoji art, smileys, emoticons, unicode emojis">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://drbaph.is-a.dev/Emojeez">
+
+    <!-- Open Graph Meta Tags (for social sharing) -->
+    <meta property="og:title" content="✨ Emojeez Encyclopedia | Discover Every Emotion">
+    <meta property="og:description" content="The most beautiful and interactive emoji encyclopedia. Discover, search, and explore thousands of emojis with stunning animations.">
+    <meta property="og:image" content="https://i.ibb.co/HTWT6tpT/9-WDKMb-Djl-TPpl-wes97-R6-output.png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <meta property="og:image:alt" content="Emojeez Encyclopedia - Interactive Emoji Search Interface">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://drbaph.is-a.dev/Emojeez">
+    <meta property="og:site_name" content="Emojeez Encyclopedia">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card (for better previews on Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="✨ Emojeez Encyclopedia | Discover Every Emotion">
+    <meta name="twitter:description" content="The most beautiful and interactive emoji encyclopedia. Discover, search, and explore thousands of emojis with stunning animations.">
+    <meta name="twitter:image" content="https://i.ibb.co/HTWT6tpT/9-WDKMb-Djl-TPpl-wes97-R6-output.png">
+    <meta name="twitter:site" content="@EmojeezApp">
+    <meta name="twitter:creator" content="@EmojeezApp">
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="application-name" content="Emojeez Encyclopedia">
+    <meta property="fb:app_id" content="">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Emojeez Encyclopedia",
+        "description": "The most beautiful and interactive emoji encyclopedia. Discover, search, and explore thousands of emojis with stunning animations.",
+        "url": "https://drbaph.is-a.dev/Emojeez",
+        "applicationCategory": "Entertainment",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Emojeez"
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            width: 100%;
+            overflow-x: hidden;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: var(--text-primary);
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --glass-bg-strong: rgba(255, 255, 255, 0.15);
+            --text-primary: #ffffff;
+            --text-secondary: rgba(255, 255, 255, 0.8);
+            --shadow-soft: 0 8px 32px rgba(31, 38, 135, 0.37);
+            --shadow-hover: 0 12px 40px rgba(31, 38, 135, 0.5);
+            --shadow-intense: 0 20px 60px rgba(31, 38, 135, 0.6);
+            --border-radius-small: 0.75rem;
+            --border-radius-medium: 1rem;
+            --border-radius-large: 1.5rem;
+            --transition-fast: 0.2s ease;
+            --transition-smooth: 0.3s ease;
+            --transition-bounce: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        .search-overflow-wrapper {
+            overflow: visible;
+            position: relative;
+        }
+
+        .header-content {
+            overflow: visible;
+        }
+
+        .nav-container {
+            margin-left: -1rem;
+            margin-right: -1rem;
+            overflow-x: auto;
+            padding: 0.5rem 1rem;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            width: auto;
+            min-width: min-content;
+        }
+
+        /* Header */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(20px);
+            background: var(--glass-bg);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 1rem 0;
+            margin-bottom: 1rem;
+            overflow: visible;
+        }
+
+        /* Mobile-specific header adjustments */
+        @media (max-width: 768px) {
+            .header {
+                padding: 0.75rem 0;
+            }
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            position: relative;
+            padding: 0 1rem;
+            min-height: 72px;
+            overflow: hidden;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: white;
+            white-space: nowrap;
+        }
+
+        .logo-emoji {
+            font-size: 2rem;
+            animation: bounce 2s infinite;
+        }
+
+        .github-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            flex-shrink: 0;
+        }
+
+        .github-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .github-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .mobile-header {
+            display: none;
+        }
+
+        /* Desktop-only search centering */
+        @media (min-width: 769px) {
+            .header-content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                height: 72px;
+            }
+
+            .header-content > .logo {
+                position: absolute;
+                left: 16px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .header-content > .search-overflow-wrapper {
+                position: relative;
+                max-width: 400px;
+                width: 100%;
+                z-index: 1;
+            }
+
+            .header-content > .github-link {
+                position: absolute;
+                right: 16px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 10;
+            }
+
+            .mobile-header {
+                display: none !important;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        /* Search */
+        .search-container {
+            position: relative;
+            max-width: 400px;
+            width: 100%;
+            z-index: 1;
+            overflow: visible;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 1.5rem 1rem 3.5rem;
+            border: none;
+            border-radius: 50px;
+            background: var(--glass-bg-strong);
+            backdrop-filter: blur(25px);
+            border: 1px solid var(--glass-border);
+            font-size: 1rem;
+            color: white;
+            placeholder-color: rgba(255, 255, 255, 0.7);
+            transition: all var(--transition-smooth);
+            box-shadow: var(--shadow-soft);
+            font-weight: 500;
+        }
+
+        .search-input:focus {
+            outline: none;
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .search-container::before {
+            content: "🔍";
+            position: absolute;
+            left: 1.2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+            opacity: 0.7;
+            pointer-events: none;
+        }
+
+        .search-input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .search-suggestions {
+            position: fixed;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 1rem;
+            max-height: 300px;
+            overflow: hidden;
+            z-index: 9999;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            pointer-events: none;
+        }
+
+        .search-suggestions-content {
+            max-height: 300px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            padding-right: 2px;
+            margin-right: 2px;
+        }
+
+        .search-suggestions.show {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .suggestion-item {
+            padding: 1rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #2d3748;
+        }
+
+        .suggestion-item:hover {
+            background: rgba(255, 255, 255, 0.8);
+            transform: translateX(5px);
+        }
+
+        .suggestion-emoji {
+            font-size: 1.5rem;
+        }
+
+        .suggestion-text {
+            flex: 1;
+        }
+
+        .suggestion-name {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: #2d3748;
+        }
+
+        .suggestion-keywords {
+            font-size: 0.8rem;
+            opacity: 0.7;
+            color: #4a5568;
+        }
+
+        .suggestion-keywords .keyword {
+            cursor: pointer;
+            transition: all 0.2s ease;
+            padding: 0.1rem 0.3rem;
+            border-radius: 0.3rem;
+            margin: 0 0.1rem;
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .suggestion-keywords .keyword:hover {
+            background: rgba(102, 126, 234, 0.2);
+            transform: scale(1.05);
+        }
+
+        
+        .nav-tabs::-webkit-scrollbar {
+            display: none;
+        }
+
+        
+        .nav-tab {
+            padding: 0.8rem 1.2rem;
+            border: none;
+            border-radius: 50px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(25px);
+            border: 1px solid var(--glass-border);
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-bounce);
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+            font-size: 0.85rem;
+            min-width: fit-content;
+            max-width: 140px;
+            flex-shrink: 0;
+            line-height: 1.2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-tab:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: var(--shadow-hover);
+            background: var(--glass-bg-strong);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .nav-tab.active {
+            background: var(--accent-gradient);
+            border-color: transparent;
+            box-shadow: var(--shadow-intense);
+            transform: translateY(-1px) scale(1.05);
+        }
+
+        .nav-tab .tab-emoji {
+            font-size: 1.1rem;
+            margin-right: 0.2rem;
+            display: inline-block;
+            animation: none;
+            vertical-align: middle;
+            line-height: 1;
+            position: relative;
+            top: 1px;
+        }
+
+        .nav-tab .tab-label {
+            display: inline-block;
+            vertical-align: middle;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: calc(100% - 1.8rem);
+        }
+
+        .nav-tab:hover .tab-emoji {
+            animation: wiggle 0.5s ease-in-out;
+        }
+
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-5deg); }
+            75% { transform: rotate(5deg); }
+        }
+
+        .nav-tab::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .nav-tab:hover::before {
+            left: 100%;
+        }
+
+        /* Main Content */
+        .main-content {
+            min-height: 60vh;
+        }
+
+        .emoji-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .emoji-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(25px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--border-radius-medium);
+            padding: 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all var(--transition-bounce);
+            box-shadow: var(--shadow-soft);
+            position: relative;
+            overflow: hidden;
+            min-height: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .emoji-card:hover {
+            transform: translateY(-8px) scale(1.08) rotate(1deg);
+            box-shadow: var(--shadow-intense);
+            background: var(--glass-bg-strong);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .emoji-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--accent-gradient);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+
+        .emoji-card:hover::before {
+            opacity: 0.1;
+        }
+
+        .emoji-display {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            animation: fadeInUp 0.6s ease;
+            transition: transform var(--transition-smooth);
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+        }
+
+        .emoji-card:hover .emoji-display {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        .emoji-name {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: white;
+            opacity: 0.9;
+            margin: 0.5rem 0;
+            line-height: 1.2;
+        }
+
+        .quick-copy-btn {
+            background: var(--glass-bg-strong);
+            border: 1px solid var(--glass-border);
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: var(--border-radius-small);
+            font-size: 0.7rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-smooth);
+            margin-top: auto;
+            backdrop-filter: blur(25px);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .quick-copy-btn:hover {
+            background: var(--accent-gradient);
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: var(--shadow-soft);
+            border-color: transparent;
+        }
+
+        .quick-copy-btn:active {
+            transform: translateY(0) scale(0.98);
+        }
+
+        /* Emoji Detail Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            padding: 1rem;
+        }
+
+        .modal-overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-content {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 2rem;
+            padding: 2rem;
+            max-width: 500px;
+            width: 100%;
+            max-height: 80vh;
+            overflow: hidden;
+            transform: scale(0.8) translateY(50px);
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-hover);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-overlay.show .modal-content {
+            transform: scale(1) translateY(0);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            flex-shrink: 0;
+        }
+
+        .modal-scrollable-content {
+            flex: 1;
+            overflow-y: auto;
+            padding-right: 0.5rem;
+            margin-right: -0.5rem;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: white;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+        }
+
+        .close-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: rotate(90deg);
+        }
+
+        .modal-emoji {
+            font-size: 5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            animation: bounceIn 0.6s ease;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .copy-btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background: var(--accent-gradient);
+            border: none;
+            border-radius: 1rem;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .copy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .copy-btn.copied {
+            background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+        }
+
+        .modal-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-section h3 {
+            color: white;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .modal-section p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+        }
+
+        .keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .keyword-tag {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.8rem;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .related-emojis {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+            gap: 0.5rem;
+        }
+
+        .related-emoji {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 0.5rem;
+            padding: 0.75rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 1.5rem;
+        }
+
+        .related-emoji:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+
+        /* Loading */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            color: white;
+            font-size: 1.2rem;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        .loading-text {
+            font-weight: 600;
+            opacity: 0.9;
+        }
+
+        .loading-progress {
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        .empty-state {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4rem 2rem;
+            color: white;
+            z-index: 50;
+            max-width: 90vw;
+        }
+
+        .empty-state-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .empty-state-text {
+            opacity: 0.8;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            max-width: 80vw;
+            line-height: 1.4;
+        }
+
+        .empty-state-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            opacity: 0.7;
+        }
+
+        .clear-search-btn {
+            background: var(--accent-gradient);
+            border: none;
+            border-radius: var(--border-radius-medium);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-smooth);
+        }
+
+        .clear-search-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-soft);
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem;
+                align-items: stretch;
+            }
+
+            .header-content > .logo {
+                display: none;
+            }
+
+            .mobile-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+
+            .header-content > .github-link {
+                display: none;
+            }
+
+            .mobile-logo {
+                font-size: 1.2rem;
+                font-weight: 800;
+                color: white;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+            .mobile-logo .logo-emoji {
+                font-size: 1.6rem;
+                animation: bounce 2s infinite;
+            }
+
+            .github-link {
+                width: 36px;
+                height: 36px;
+            }
+
+            .search-container {
+                width: 100%;
+                max-width: 100%;
+                margin-top: 0.5rem;
+            }
+
+            .search-overflow-wrapper {
+                overflow: visible;
+                width: 100%;
+            }
+
+            .hidden-footer {
+                padding: 0.8rem 0;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 0.8rem;
+                padding: 0 1rem;
+            }
+
+            .footer-emoji {
+                font-size: 2rem;
+            }
+
+            .footer-text h3 {
+                font-size: 1.1rem;
+            }
+
+            .footer-text p {
+                font-size: 0.85rem;
+            }
+
+            .footer-witty {
+                font-size: 0.8rem;
+            }
+
+            .back-to-top-btn {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.85rem;
+            }
+
+            .empty-state {
+                max-width: 85vw;
+                padding: 3rem 1.5rem;
+            }
+
+            .empty-state-title {
+                font-size: 1.2rem;
+            }
+
+            .empty-state-text {
+                font-size: 0.9rem;
+                max-width: 75vw;
+            }
+
+            .empty-state-icon {
+                font-size: 3rem;
+            }
+
+            .nav-tabs {
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0.5rem;
+                gap: 0.4rem;
+            }
+
+            .nav-tabs::-webkit-scrollbar {
+                display: none;
+            }
+
+            .nav-tab {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.7rem;
+                min-width: 65px;
+                max-width: 80px;
+                flex: 0 0 auto;
+                border-radius: 40px;
+            }
+
+            .nav-tab .tab-emoji {
+                font-size: 1rem;
+                margin-right: 0.05rem;
+                display: block;
+                text-align: center;
+                margin-bottom: 0.2rem;
+            }
+
+            .nav-tab .tab-label {
+                display: none;
+            }
+
+            .emoji-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0.4rem;
+                padding: 0 0.5rem;
+            }
+
+            .emoji-card {
+                padding: 0.6rem;
+                min-height: 110px;
+                border-radius: var(--border-radius-small);
+            }
+
+            .emoji-display {
+                font-size: 1.8rem;
+                margin-bottom: 0.3rem;
+            }
+
+            .emoji-name {
+                font-size: 0.65rem;
+                margin-bottom: 0.3rem;
+                line-height: 1.1;
+            }
+
+            .quick-copy-btn {
+                padding: 0.2rem 0.5rem;
+                font-size: 0.6rem;
+                margin-top: auto;
+                border-radius: 0.4rem;
+            }
+
+            .modal-content {
+                margin: 0.5rem;
+                padding: 1.5rem;
+                max-height: 90vh;
+            }
+
+            .modal-scrollable-content {
+                padding-right: 0.3rem;
+            }
+
+            .modal-emoji {
+                font-size: 3rem;
+            }
+
+            .modal-title {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 0.5rem;
+            }
+
+            .empty-state {
+                max-width: 90vw;
+                padding: 2.5rem 1rem;
+            }
+
+            .empty-state-title {
+                font-size: 1.1rem;
+            }
+
+            .empty-state-text {
+                font-size: 0.85rem;
+                max-width: 70vw;
+                line-height: 1.3;
+            }
+
+            .empty-state-icon {
+                font-size: 2.5rem;
+            }
+
+            .nav-tabs {
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0.4rem;
+                gap: 0.3rem;
+            }
+
+            .nav-tab {
+                padding: 0.4rem 0.7rem;
+                font-size: 0.65rem;
+                min-width: 60px;
+                max-width: 75px;
+            }
+
+            .nav-tab .tab-emoji {
+                font-size: 0.9rem;
+            }
+
+            .emoji-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0.3rem;
+                padding: 0 0.3rem;
+            }
+
+            .emoji-card {
+                padding: 0.5rem;
+                min-height: 100px;
+            }
+
+            .emoji-display {
+                font-size: 1.6rem;
+            }
+
+            .emoji-name {
+                font-size: 0.6rem;
+                margin-bottom: 0.2rem;
+            }
+
+            .quick-copy-btn {
+                font-size: 0.55rem;
+                padding: 0.15rem 0.4rem;
+            }
+
+            .search-input {
+                padding: 0.8rem 1.2rem 0.8rem 3rem;
+                font-size: 0.9rem;
+            }
+
+            .search-container::before {
+                left: 1rem;
+                font-size: 1rem;
+            }
+        }
+
+        /* Extra small mobile devices */
+        @media (max-width: 360px) {
+            .emoji-grid {
+                grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+            }
+
+            .nav-tab {
+                min-width: 55px;
+                max-width: 70px;
+                padding: 0.4rem 0.6rem;
+            }
+        }
+
+        /* Mobile touch optimizations */
+        @media (hover: none) and (pointer: coarse) {
+            .emoji-card:active {
+                transform: scale(0.95);
+                background: var(--glass-bg-strong);
+            }
+
+            .nav-tab:active {
+                transform: scale(0.95);
+            }
+
+            .quick-copy-btn:active {
+                transform: scale(0.9);
+            }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        /* Hide scrollbar for main content but keep functionality */
+        html {
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        body {
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Modal scrollbar styling */
+        .modal-scrollable-content::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .modal-scrollable-content::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 3px;
+        }
+
+        .modal-scrollable-content::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 3px;
+        }
+
+        .modal-scrollable-content::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Search suggestions scrollbar styling */
+        .search-suggestions-content::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .search-suggestions-content::-webkit-scrollbar-track {
+            background: transparent;
+            border-radius: 0;
+        }
+
+        .search-suggestions-content::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 2px;
+        }
+
+        .search-suggestions-content::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        /* Fun Footer */
+        .hidden-footer {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid var(--glass-border);
+            padding: 1rem 0;
+            margin-top: 2rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all var(--transition-bounce);
+            visibility: hidden;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .hidden-footer.show {
+            opacity: 1;
+            transform: translateY(0);
+            visibility: visible;
+            height: auto;
+            overflow: visible;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-emoji {
+            font-size: 2.5rem;
+            animation: footerWiggle 2s ease-in-out infinite;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+        }
+
+        .footer-text {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .footer-text h3 {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-text p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+            line-height: 1.4;
+        }
+
+        .footer-witty {
+            font-style: italic;
+            opacity: 0.7;
+            font-size: 0.85rem;
+        }
+
+        /* Main content wrapper to prevent overflow */
+        .main-wrapper {
+            width: 100%;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .back-to-top-btn {
+            background: var(--accent-gradient);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all var(--transition-bounce);
+            white-space: nowrap;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .back-to-top-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .back-to-top-btn:active {
+            transform: translateY(-1px) scale(0.98);
+        }
+
+        @keyframes footerWiggle {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-5deg); }
+            75% { transform: rotate(5deg); }
+        }
+
+        /* Ensure emoji fallbacks for better compatibility */
+        .emoji-display, .nav-tab .tab-emoji {
+            font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Emoji", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-wrapper">
+        <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-emoji">✨</span>
+                    <span>Emojeez</span>
+                </div>
+
+                <div class="search-overflow-wrapper">
+                    <div class="search-container">
+                        <input
+                            type="text"
+                            class="search-input"
+                            placeholder="Search emojis... (try 'happy', 'food', 'heart')"
+                            id="searchInput"
+                        >
+                        <div class="search-suggestions" id="searchSuggestions"></div>
+                    </div>
+                </div>
+
+                <a href="https://github.com/Saganaki22/Emojeez" target="_blank" rel="noopener noreferrer" class="github-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="github-icon">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+
+                <div class="mobile-header">
+                    <div class="mobile-logo">
+                        <span class="logo-emoji">✨</span>
+                        <span>Emojeez</span>
+                    </div>
+                    <a href="https://github.com/Saganaki22/Emojeez" target="_blank" rel="noopener noreferrer" class="github-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="github-icon">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="nav-container">
+            <nav class="nav-tabs" id="navTabs">
+            <button class="nav-tab active" data-category="all"><span class="tab-emoji">🌟</span> <span class="tab-label">All</span></button>
+            <button class="nav-tab" data-category="Smileys & Emotion"><span class="tab-emoji">😊</span> <span class="tab-label">Smileys</span></button>
+            <button class="nav-tab" data-category="People & Body"><span class="tab-emoji">👥</span> <span class="tab-label">People</span></button>
+            <button class="nav-tab" data-category="Animals & Nature"><span class="tab-emoji">🦋</span> <span class="tab-label">Nature</span></button>
+            <button class="nav-tab" data-category="Food & Drink"><span class="tab-emoji">🍕</span> <span class="tab-label">Food</span></button>
+            <button class="nav-tab" data-category="Travel & Places"><span class="tab-emoji">✈️</span> <span class="tab-label">Travel</span></button>
+            <button class="nav-tab" data-category="Activities"><span class="tab-emoji">⚽</span> <span class="tab-label">Activities</span></button>
+            <button class="nav-tab" data-category="Objects"><span class="tab-emoji">💡</span> <span class="tab-label">Objects</span></button>
+            <button class="nav-tab" data-category="Symbols"><span class="tab-emoji">❤️</span> <span class="tab-label">Symbols</span></button>
+            <button class="nav-tab" data-category="Flags"><span class="tab-emoji">🚩</span> <span class="tab-label">Flags</span></button>
+        </nav>
+        </div>
+
+        <div class="main-content">
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <div class="loading-text">Loading amazing emojis...</div>
+                <div class="loading-progress">Preparing your emoji collection...</div>
+            </div>
+            <div class="emoji-grid" id="emojiGrid" style="display: none;"></div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">Emoji Details</h2>
+                <button class="close-btn" id="closeBtn">×</button>
+            </div>
+
+            <div class="modal-scrollable-content">
+                <div class="modal-emoji" id="modalEmoji"></div>
+                <h3 class="modal-title" id="modalName"></h3>
+
+                <button class="copy-btn" id="copyBtn">
+                    📋 Copy Emoji
+                </button>
+
+                <div class="modal-section">
+                    <h3>Description</h3>
+                    <p id="modalDescription"></p>
+                </div>
+
+                <div class="modal-section">
+                    <h3>When to use</h3>
+                    <p id="modalUsage"></p>
+                </div>
+
+                <div class="modal-section">
+                    <h3>Keywords</h3>
+                    <div class="keywords" id="modalKeywords"></div>
+                </div>
+
+                <div class="modal-section">
+                    <h3>Related Emojis</h3>
+                    <div class="related-emojis" id="relatedEmojis"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fun Footer -->
+    <footer class="hidden-footer" id="funFooter">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-emoji">🕵️‍♂️</div>
+                <div class="footer-text">
+                    <h3>Caught you scrolling! 👀</h3>
+                    <p>You've reached the end of the emoji rainbow... 🌈</p>
+                    <p class="footer-witty">There are no more emojis down here, just this awkward turtle: 🐢</p>
+                </div>
+                <div class="footer-actions">
+                    <button class="back-to-top-btn" id="backToTop">
+                        ↑ Back to the emoji party! ↑
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    </div>
+</body>
+</html>
