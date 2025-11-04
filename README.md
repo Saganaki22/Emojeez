@@ -2,7 +2,8 @@
 
 <div align="center">
 
-![Emojeez Encyclopedia](https://i.ibb.co/HTWT6tpT/9-WDKMb-Djl-TPpl-wes97-R6-output.png)
+<img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/bac65c82-f81d-490e-831b-d5a56f73c3d9" />
+
 
 **The most beautiful and interactive emoji encyclopedia for quick access to emojis when you don't know their unicode by heart.**
 
