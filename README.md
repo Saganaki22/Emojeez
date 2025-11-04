@@ -50,4 +50,8 @@ This is an archived project for educational purposes. Feel free to fork and modi
 
 This project is open source and available under the [MIT License](LICENSE).
 
+## 🙏 Acknowledgments
+
+- [emojis.json](https://github.com/chalda-pnuzig/emojis.json) by [@chalda-pnuzig](https://github.com/chalda-pnuzig)
+
 ---
