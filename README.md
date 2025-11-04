@@ -2,16 +2,18 @@
 
 <div align="center">
 
-<img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/bac65c82-f81d-490e-831b-d5a56f73c3d9" />
-
-
-**The most beautiful and interactive emoji encyclopedia for quick access to emojis when you don't know their unicode by heart.**
-
 [![Live Demo](https://img.shields.io/badge/Live-Demo-%23667eea?style=for-the-badge&logo=windows&logoColor=white)](https://drbaph.is-a.dev/Emojeez)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Responsive](https://img.shields.io/badge/Responsive-4DC2F1?style=for-the-badge&logo=responsive&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
+
+
+
+<img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/bac65c82-f81d-490e-831b-d5a56f73c3d9" />
+
+
+**The most beautiful and interactive emoji encyclopedia for quick access to emojis when you don't know their unicode by heart.**
 
 </div>
 
